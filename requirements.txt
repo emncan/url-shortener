@@ -1,0 +1,10 @@
+fastapi
+uvicorn
+SQLAlchemy==2.0.6
+psycopg2==2.9.6
+pydantic==1.10.7
+python-dotenv==1.0.0
+pytest
+requests==2.28.2
+redis==4.5.1
+httpx

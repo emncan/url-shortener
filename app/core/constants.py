@@ -1,0 +1,2 @@
+DEFAULT_PASSWORD = "default_password"
+URL_SHORT_CODE_LENGTH = 15
