@@ -166,6 +166,7 @@ Replace <container_name> with the actual name or ID of your container.
 #### 2. Run the Tests
 Once inside the container, you can run pytest to execute your tests:
 ```bash
+pytest -k test_unauthorized_access
 pytest -k test_shorten_url
 pytest -k test_exist_original_url
 pytest -k test_redirect_url

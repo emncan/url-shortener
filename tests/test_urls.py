@@ -2,6 +2,18 @@ import pytest
 from app.core.logging_config import logger
 
 
+def test_unauthorized_access(client):
+    """
+    Test unauthorized access to shorten URL endpoint.
+    """
+
+    response = client.post("/shorten")
+    assert response.status_code == 401
+    resp_json = response.json()
+    assert resp_json["status"] == "error"
+    assert resp_json["message"] == "API key is missing."
+
+
 def test_shorten_url(client, user1_fixture):
     """
     Test if we can successfully shorten a URL.
